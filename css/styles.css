@@ -1,0 +1,356 @@
+/*-------------------------------------------------
+BASE
+-------------------------------------------------*/
+
+html{
+    box-sizing: border-box;
+}
+
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+/*-------------------------------------------------
+ÉLEMENTS
+-------------------------------------------------*/
+
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    
+}
+
+body{
+    margin: 0; 
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------------
+COMPONENTS
+-------------------------------------------------*/
+
+/**header*/
+header{
+    height: 70px;
+    border-top: 4px #E25254 solid;
+}
+
+header .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 4px;
+}
+
+header ul{
+    display: flex;
+    gap: 18px;
+}
+
+
+/**hero*/
+.hero{
+
+    background-image: url(../images/ImageHero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .wrapper{
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.hero .card{
+    height: 510px;
+    width: 600px;
+    background-color: rgba(226, 82, 84, 0.9);
+
+    padding: 32px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.hero a{
+    background-color: #C0392B;
+    padding: 6px 20px;
+    margin-top: 25px;
+    display: inline-flex;
+}
+
+/**Groupe Produits*/
+.produits{
+    background-color: #ECF0F1;
+    height: 725px;
+    
+    display: flex;
+    align-items: center;
+}
+
+.produits .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 38px;
+}
+
+.produits article{
+    width: 375px;
+    height: 230px;
+    background-color: white;
+
+    padding: 30px 30px;
+}
+
+.produits article .titre{
+    display: flex;
+    align-items: center;
+
+}
+
+.produits article:hover{
+    background-color: #E25254;
+}
+
+.produits article:hover h4, .produits article:hover span,.produits article:hover p{
+    color: white;
+}
+
+.produits article p{
+    margin-top: 38px;
+}
+
+/**conseils*/
+
+.conseils{
+    height: 600px;
+    background-image: url(../images/Briques.png);
+    background-color: #E25254;
+
+    display: flex;
+    align-items: center;
+}
+
+.conseils article{
+    background-color: white;
+    width: 375px;
+    height: 335px;
+
+    padding: 30px 30px;
+
+}
+
+.conseils .card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 38px;
+}
+
+.conseils article .titre{
+    display: flex;
+    align-items: center;
+
+}
+
+.conseils .texte{
+    margin-top: 38px;
+    padding-left: 30px;
+}
+
+/**footer*/
+footer{
+    background-color: #E25254;
+}
+
+
+footer .wrapper{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***fonts*****/
+
+/*header*/
+header h1{
+    font-family: 'Josefin Sans';
+    font-size: 42px;
+    font-weight: 400;
+    color: black;
+}
+
+header li{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    color: #474747;
+}
+
+/*hero*/
+.hero p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+}
+
+.hero h2{
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 28px;
+    line-height: 55px;
+    color: white;
+
+    padding: 25px 0;
+}
+
+.hero a{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: white;
+
+    text-decoration: none;
+}
+
+/*Produits*/
+.produits h3{
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+
+    padding-bottom: 10px;
+}
+
+.produits p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: black;
+
+    padding-bottom: 11px;
+}
+
+.produits h4{
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    font-weight: 700;
+    color: #E25254;
+
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.produits .material-symbols-outlined{
+    color: #E25254;
+}
+
+/*conseils*/
+.conseils h3{
+    font-family: 'Josefin Sans';
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+
+    padding-bottom: 20px;
+}
+
+.conseils .sous-titre{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: white;
+
+    padding-bottom: 45px;
+}
+
+/*conseils article*/
+.conseils h4{
+    font-family: 'Josefin Sans';
+    font-size: 22px;
+    font-weight: 700;
+    color: #E25254;
+    
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-left: 8px;
+}
+
+.conseils p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: black;
+}
+
+.conseils .lireplus{
+    display: flex;
+    justify-content: flex-end;
+
+    padding-top: 25px;
+}
+
+/*footer*/
+footer p{
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    color: white;
+}
