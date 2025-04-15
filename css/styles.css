@@ -357,4 +357,32 @@ footer p{
 
 
 /***MODALE***/
+.visible {
+    background-color: #474747;
+    width: 100%;
+}
 
+.modale{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 20;
+    background-color: rgba(0,0,0,0.50);
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Roboto';
+    font-size: 40rem;
+    font-weight: 700;
+    color: red;
+}
+
+.modale.visible{
+    display: flex;
+}
